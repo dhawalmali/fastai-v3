@@ -9,10 +9,24 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-export_file_url = 'https://www.dropbox.com/s/6bgq8t6yextloqp/export.pkl?raw=1'
+export_file_url = 'https://drive.google.com/uc?export=download&id=1xbiVvXL_a_wqCeH_NrurqteGAJTmgt17'
 export_file_name = 'export.pkl'
 
-classes = ['black', 'grizzly', 'teddys']
+classes = ['Tomato_Late_blight',
+ 'Pepper__bell___healthy',
+ 'Tomato_Septoria_leaf_spot',
+ 'Tomato_Spider_mites_Two_spotted_spider_mite',
+ 'Potato___Early_blight',
+ 'Potato___healthy',
+ 'Tomato_healthy',
+ 'Tomato_Leaf_Mold',
+ 'Tomato__Tomato_YellowLeaf__Curl_Virus',
+ 'Tomato_Early_blight',
+ 'Tomato__Tomato_mosaic_virus',
+ 'Tomato__Target_Spot',
+ 'Tomato_Bacterial_spot',
+ 'Pepper__bell___Bacterial_spot',
+ 'Potato___Late_blight']
 path = Path(__file__).parent
 
 app = Starlette()
